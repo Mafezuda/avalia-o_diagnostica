@@ -1,8 +1,8 @@
-public abstract class Serviço {
+public abstract class Servico {
     private String tipo;
     private double preco;
 
-    public Serviço(String tipo, double preco) {
+    public Servico(String tipo, double preco) {
         this.tipo = tipo;
         this.preco = preco;
     }
@@ -28,5 +28,5 @@ public abstract class Serviço {
         return "Serviço [tipo=" + tipo + ", preço=" + preco + "]";
     }
 
-    public abstract void realizarServiço();
+    public abstract void realizarServico();
 }

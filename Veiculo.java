@@ -1,8 +1,8 @@
-public class Veículo {
+public class Veiculo {
     private String placa;
     private String modelo;
 
-    public Veículo(String placa, String modelo) {
+    public Veiculo(String placa, String modelo) {
         this.placa = placa;
         this.modelo = modelo;
     }

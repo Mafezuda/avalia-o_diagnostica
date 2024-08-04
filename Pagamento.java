@@ -1,12 +1,12 @@
 public class Pagamento {
     private Dono dono;
-    private Serviço serviço;
+    private Servico servico;
     private double valor;
 
-    public Pagamento(Dono dono, Serviço serviço) {
+    public Pagamento(Dono dono, Servico servico) {
         this.dono = dono;
-        this.serviço = serviço;
-        this.valor = serviço.getPreco();
+        this.servico = servico;
+        this.valor = servico.getPreco();
     }
 
     public Dono getDono() {
@@ -17,12 +17,12 @@ public class Pagamento {
         this.dono = dono;
     }
 
-    public Serviço getServiço() {
-        return serviço;
+    public Servico getServico() {
+        return servico;
     }
 
-    public void setServiço(Serviço serviço) {
-        this.serviço = serviço;
+    public void setServico(Servico servico) {
+        this.servico = servico;
     }
 
     public double getValor() {
@@ -35,6 +35,6 @@ public class Pagamento {
 
     @Override
     public String toString() {
-        return "Pagamento [dono=" + dono.getNome() + ", serviço=" + serviço.getTipo() + ", valor=" + valor + "]";
+        return "Pagamento [dono=" + dono.getNome() + ", serviço=" + servico.getTipo() + ", valor=" + valor + "]";
     }
 }

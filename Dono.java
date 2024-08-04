@@ -1,10 +1,10 @@
 public class Dono {
     private String nome;
-    private Veículo veículo;
+    private Veiculo veiculo;
 
-    public Dono(String nome, Veículo veículo) {
+    public Dono(String nome, Veiculo veiculo) {
         this.nome = nome;
-        this.veículo = veículo;
+        this.veiculo = veiculo;
     }
 
     public String getNome() {
@@ -15,16 +15,16 @@ public class Dono {
         this.nome = nome;
     }
 
-    public Veículo getVeículo() {
-        return veículo;
+    public Veiculo getVeiculo() {
+        return veiculo;
     }
 
-    public void setVeículo(Veículo veículo) {
-        this.veículo = veículo;
+    public void setVeiculo(Veiculo veiculo) {
+        this.veiculo = veiculo;
     }
 
     @Override
     public String toString() {
-        return "Dono [nome=" + nome + ", " + veículo + "]";
+        return "Dono [nome=" + nome + ", " + veiculo + "]";
     }
 }
