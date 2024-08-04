@@ -1,22 +1,30 @@
 public class Dono {
     private String nome;
-    private String veiculo;
+    private Veículo veículo;
 
-    public Dono(String nome, String veiculo){
+    public Dono(String nome, Veículo veículo) {
         this.nome = nome;
-        this.veiculo = veiculo;
+        this.veículo = veículo;
     }
 
-    public String getNome(){
+    public String getNome() {
         return nome;
     }
 
-    public String getVeiculo(){
-        return veiculo;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public String toString(){
-        return "Dono [nome = " + nome + ", veículo =" + veiculo + "]";
+    public Veículo getVeículo() {
+        return veículo;
     }
-    
+
+    public void setVeículo(Veículo veículo) {
+        this.veículo = veículo;
+    }
+
+    @Override
+    public String toString() {
+        return "Dono [nome=" + nome + ", " + veículo + "]";
+    }
 }
